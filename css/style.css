@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+body{
+    width:auto;
+    position: relative;
+    background-image: url(../images/bg-intro-mobile.png);
+    background-color: hsl(0, 100%, 74%);
+    
+}
+
+.container{
+    width: 100%;
+    margin: 40px 0px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:70px;
+}
+
+/*estilos primera caja: titulo y descripción*/
+
+#box_title{
+    width: 85%;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    gap:35px;
+    justify-content: center;
+    align-items: center;
+}
+
+#box_title > h1{
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+}
+
+#box_title > p{
+    font-weight: 400;
+    text-align: center;
+}
+
+/*estilos segunda caja: banner y formulario*/
+
+#box_form{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+#free_trial{
+    background-color: hsl(248, 32%, 49%);
+    padding: 20px 40px;
+    border-radius: 10px;
+    text-align: center;
+    color:white;
+    box-shadow: 0px 8px rgba(62, 60, 73, 0.3);
+}
+
+#free_trial p span{
+    font-weight: 600;
+}
+
+#form_container{
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 8px rgba(62, 60, 73, 0.3);
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    justify-content: center;
+    align-items: center;
+}
+
+#form_container > form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    justify-content: center;
+    align-items: center;
+}
+
+#form_container form input{
+    width:100%;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid hsl(246, 25%, 77%);
+    font-weight: 600;
+}
+
+button{
+    width:100%;
+    padding: 15px;
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-radius: 5px;
+    border-bottom: 3px rgba(56, 204, 140,0.3);
+    border-right: 1px rgba(56, 204, 140,0.3);
+    border-top: 1px rgba(56, 204, 140,0.3);
+    border-left: 1px rgba(56, 204, 140,0.3);
+    border-bottom-style: outset;
+    border-right-style: outset;
+    border-top-style: inset;
+    border-left-style: inset;
+    cursor: pointer;
+}
+
+button:active{
+    opacity: 0.6;
+}
+#form_container > p{
+    text-align: center;
+    font-size: 11px;
+    padding: 0px 20px;
+    color:hsl(246, 25%, 77%);
+    font-weight: 400;
+}
+
+#form_container p a{
+    font-size: 11px;
+    font-weight: 700;
+    color: hsl(0, 100%, 74%);
+}
+
+
+
+@media (min-width:1000px){
+    body{
+        background-image: url(../images/bg-intro-desktop.png);   
+        width: 100vw; 
+        min-height: 100vh; 
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .container{
+        width: 85%;
+        min-height: 100vh;
+        margin: 0px;
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap:70px;
+    }
+
+    #box_form{
+        width: 45%;
+    }
+
+    #box_title{
+        width: 45%;
+    }
+    #box_title > h1{
+        font-size: 52px;
+        text-align:left;
+    }
+    
+    #box_title > p{
+        
+        text-align: left;
+    }
+
+}
+
+ .error_msn{
+    width:100%;
+    font-style: oblique;
+    color:hsl(0, 100%, 74%);
+    font-weight: 500;
+    font-size: 13px;
+    text-align: right;
+ }
+
+ #form_container form input.input_box_error{
+    border:3px solid hsl(0, 100%, 74%);
+    background-image: url(../images/icon-error.svg);
+    background-repeat: no-repeat;
+    background-position:97%;
+ }
+
+ #form_container form input.input_box_error::placeholder{
+    color:white;
+ }
+
+ #form_container form input.input_box_error_email::placeholder{
+    color:hsl(0, 100%, 74%);
+ }
+
+ 
